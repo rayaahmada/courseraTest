@@ -1,0 +1,182 @@
+Microsoft Windows [Version 10.0.19042.985]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Raya>cd Desktop
+
+C:\Users\Raya\Desktop>git clone https://github.com/rayaahmada/courseraTest.git
+Cloning into 'courseraTest'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+
+C:\Users\Raya\Desktop>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Raya\Desktop>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8E61-C517
+
+ Directory of C:\Users\Raya\Desktop
+
+06/08/2021  12:41 PM    <DIR>          .
+06/08/2021  12:41 PM    <DIR>          ..
+06/03/2021  07:37 AM             2,568 Commands to Unlock.txt
+06/08/2021  12:41 PM    <DIR>          courseraTest
+06/04/2021  09:01 AM    <DIR>          css-res
+05/04/2021  06:02 AM    <DIR>          DESK
+06/01/2021  07:13 AM               572 lect4.ex1.txt
+05/24/2021  05:24 AM             2,536 more commands.txt
+05/29/2021  06:11 AM    <DIR>          mySite
+06/02/2021  05:06 PM    <DIR>          NT6207
+05/22/2021  03:03 PM             7,276 Scott user Scripts.docx
+05/29/2021  12:04 PM    <DIR>          webtech
+               4 File(s)         12,952 bytes
+               8 Dir(s)  266,693,832,704 bytes free
+
+C:\Users\Raya\Desktop>cd courseraTest
+
+C:\Users\Raya\Desktop\courseraTest>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8E61-C517
+
+ Directory of C:\Users\Raya\Desktop\courseraTest
+
+06/08/2021  12:41 PM    <DIR>          .
+06/08/2021  12:41 PM    <DIR>          ..
+06/08/2021  12:41 PM                37 README.md
+               1 File(s)             37 bytes
+               2 Dir(s)  266,693,812,224 bytes free
+
+C:\Users\Raya\Desktop\courseraTest>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\Raya\Desktop\courseraTest>git checkout gh-pages
+Switched to a new branch 'gh-pages'
+Branch 'gh-pages' set up to track remote branch 'gh-pages' from 'origin'.
+
+C:\Users\Raya\Desktop\courseraTest>git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+nothing to commit, working tree clean
+
+C:\Users\Raya\Desktop\courseraTest>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8E61-C517
+
+ Directory of C:\Users\Raya\Desktop\courseraTest
+
+06/08/2021  12:42 PM    <DIR>          .
+06/08/2021  12:42 PM    <DIR>          ..
+06/08/2021  12:42 PM             1,335 index.md
+06/08/2021  12:42 PM                26 _config.yml
+               2 File(s)          1,361 bytes
+               2 Dir(s)  266,692,853,760 bytes free
+
+C:\Users\Raya\Desktop\courseraTest>mkdir site
+
+C:\Users\Raya\Desktop\courseraTest>cd site
+
+C:\Users\Raya\Desktop\courseraTest\site>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8E61-C517
+
+ Directory of C:\Users\Raya\Desktop\courseraTest\site
+
+06/08/2021  12:43 PM    <DIR>          .
+06/08/2021  12:43 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  266,692,374,528 bytes free
+
+C:\Users\Raya\Desktop\courseraTest\site>code ./
+
+C:\Users\Raya\Desktop\courseraTest\site>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8E61-C517
+
+ Directory of C:\Users\Raya\Desktop\courseraTest\site
+
+06/08/2021  12:45 PM    <DIR>          .
+06/08/2021  12:45 PM    <DIR>          ..
+06/08/2021  12:46 PM               305 index.html
+               1 File(s)            305 bytes
+               2 Dir(s)  266,714,722,304 bytes free
+
+C:\Users\Raya\Desktop\courseraTest\site>git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Raya\Desktop\courseraTest\site>cd ..
+
+C:\Users\Raya\Desktop\courseraTest>git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        site/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Raya\Desktop\courseraTest>git add .
+
+C:\Users\Raya\Desktop\courseraTest>git status
+On branch gh-pages
+Your branch is up to date with 'origin/gh-pages'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   site/index.html
+
+
+C:\Users\Raya\Desktop\courseraTest>git commit -m "My First Git Page"
+[gh-pages 58c6d80] My First Git Page
+ 1 file changed, 12 insertions(+)
+ create mode 100644 site/index.html
+
+C:\Users\Raya\Desktop\courseraTest>git status
+On branch gh-pages
+Your branch is ahead of 'origin/gh-pages' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\Raya\Desktop\courseraTest>git push
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 557 bytes | 557.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rayaahmada/courseraTest.git
+   b12d2ee..58c6d80  gh-pages -> gh-pages
+
+C:\Users\Raya\Desktop\courseraTest>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8E61-C517
+
+ Directory of C:\Users\Raya\Desktop\courseraTest
+
+06/08/2021  12:43 PM    <DIR>          .
+06/08/2021  12:43 PM    <DIR>          ..
+06/08/2021  12:42 PM             1,335 index.md
+06/08/2021  12:45 PM    <DIR>          site
+06/08/2021  12:42 PM                26 _config.yml
+               2 File(s)          1,361 bytes
+               3 Dir(s)  266,706,620,416 bytes free
+
+C:\Users\Raya\Desktop\courseraTest>
